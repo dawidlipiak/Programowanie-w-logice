@@ -5,4 +5,4 @@ is_prime(X) :-
         X mod N=:=0 ). /* X is divisable by N */
 
 /* Go through every number between LO and HI and check if it is prime */
-prime(LO, HI, N) :- between(LO, HI, N), is_prime(N).
+prime(LO, HI, N) :- between(LO, HI, N), N > 1, is_prime(N).

@@ -8,5 +8,5 @@ on(block7,block8).
 on(block8,block9).
 on(block9,block10).
 
-above(X,Y) :- on(X,Z), above(Z,Y), !. /* ! - used for not searching further in case a condition is true */
 above(X,Y) :- on(X,Y).
+above(X,Y) :- on(X,Z), above(Z,Y).
